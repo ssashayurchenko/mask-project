@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color-light: #ffffff;
+  --text-color-medium: #515c6d;
+  --text-color-dark: #25364a;
+  --icon-background: #d0bd8c;
+  --ui-dark-accent-color: #515c6d;
+  --ui-brand-color: #d0bd8c;
+  --ui-light-shade-color: #fff;
+  --ui-light-accent-color: #f1f0e8;
+  --text-color-medium: #515c6d;
+  --text-color-dark: #25364a;
+  --icon-background: #d0bd8c;
+  --contacts-social-icons-color: #364f6c;
+  --input-focus-color-primary: #3b99fc;
+
+  /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
+  --bg-color-primary: #ffffff;
+  --bg-color-secondary: #d0bd8c;
+  --bg-color-dark: #25364a;
+  --bg-color-medium-dark: #223648;
+  --bg-color-medium-light: #515c6d;
+  --bg-color-light: #f1f0e8;
+  --text-color-primary: #25364a;
+  --text-color-secondary: #515c6d;
+  --text-color-light: #ffffff;
+  --text-color-medium-light: #d0bd8c;
+  --hover-color-primary: #ffffff;
+  --hover-color-secondary: #d0bd8c;
+  --hover-color-dark: #25364a;
+  --border-color: #d0bd8c;
+  --font-family-primary: "Playfair Display", serif;
+  --font-family-secondary: "Raleway", sans-serif;
+  --font-family-third: "Rubik", sans-serif;
+  /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Playfair";
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
