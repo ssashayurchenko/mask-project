@@ -1,5 +1,9 @@
 header {
   width: 100%;
+  background-image: url(../img/header/hero-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__hero-nav {
@@ -12,7 +16,7 @@ header {
 .header__web-site-logo {
   width: 100px;
   top: 50px;
-  margin-left: 10%;
+  margin-left: 13%;
   padding: 0;
 }
 

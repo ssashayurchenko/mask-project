@@ -1,10 +1,11 @@
 .header__hero {
-  min-height: 600px;
   padding-right: 50%;
   padding-left: 3%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
+  position: relative;
 }
 
 .header__hero-title h1 {
@@ -48,6 +49,7 @@ p.header__top-text {
   background-color: var(--saturated-blue-color);
   color: var(--main-white-color);
 }
+
 .header__button-shop-now:hover {
   background-color: var(--light-blue-color);
   color: var(--saturated-blue-color);
@@ -58,6 +60,7 @@ p.header__top-text {
   border: 1px solid var(--warm-yellow-color);
   color: var(--warm-yellow-color);
 }
+
 .header__button-learn-more:hover {
   background-color: var(--warm-yellow-color);
   color: var(--main-white-color);
@@ -69,17 +72,5 @@ p.header__top-text {
     align-items: center;
     text-align: center;
     padding: 20px;
-  }
-}
-
-@media (min-width: 801px) {
-  .header__hero {
-    background-image: url(../img/header/hero-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: flex-start;
-    height: 100vh;
-    position: relative;
   }
 }
