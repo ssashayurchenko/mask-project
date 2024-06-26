@@ -1,13 +1,12 @@
 /* Advantages Section */
-main {
+body {
   background-image: url(../img/advantages/lab-content-gradient-bg.png);
-  width: 100%;
-  padding: 10px;
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .factory__advantages {
   width: 100%;
-  padding: 10px;
   margin: 100px auto;
 }
 
@@ -69,7 +68,6 @@ main {
 .factory__article-about-respirators {
   width: 100%;
   margin: 100px auto;
-  padding: 20px;
 }
 
 article img {
@@ -140,8 +138,7 @@ article p {
 
 /* Factory Lab Content */
 .factory__lab-content {
-  padding: 20px;
-  margin: 100px auto;
+  margin: 50px 0 auto;
   display: flex;
   height: 100vh;
   width: 100%;
@@ -282,9 +279,6 @@ article p {
     flex-direction: column;
   }
 
-  .factory__lab-content-text-one {
-    margin-left: 20%;
-  }
   .factory__lab-content-second {
     display: flex;
     justify-content: space-around;
@@ -310,9 +304,15 @@ article p {
     align-items: center;
     height: 100vh;
   }
-
+  .factory__lab-content-first {
+    background-image: url(../img/advantages/lab-factory.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+  }
   .factory__lab-left-content {
-    height: 80vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
   }
@@ -321,14 +321,5 @@ article p {
     height: 50vh;
     display: flex;
     flex-direction: column;
-  }
-
-  .factory__lab-content-first {
-    background-image: url(../img/advantages/lab-factory.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 80vh;
   }
 }
