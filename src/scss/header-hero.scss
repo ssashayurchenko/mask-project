@@ -1,43 +1,78 @@
 .header__hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/header/hero-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .header__hero-title {
-    text-align: center;
-    color: white;
+  padding-right: 50%;
+  padding-left: 3%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.header__hero-title h1 {
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: var(--dark-black-color);
+}
+
+p {
+  &.header__bottom-text {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
     margin-bottom: 20px;
+    color: var(--dark-gray-color);
   }
-  .header__hero-title > h1 {
-    font-weight: bold;
-    font-size: 70px;
-    margin-bottom: 5px;
+
+  &.header__top-text {
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    color: var(--warm-yellow-color);
   }
-  
-  .header__hero-title p {
-    font-size: 20px;
-  }
-  
-  .header__button__let-us-sail a {
+}
+
+.header__button {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-left: 5px;
+
+  a {
+    font-family: var(--font-family-primary);
     display: inline-block;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-size: 20px;
-    background-color: #d0bd8c;
-    color: #f1f0e8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
     text-decoration: none;
   }
-  
-  .header__button__let-us-sail a:hover {
-    background-color: #f1f0e8;
-    color: #d0bd8c;
+}
+
+.header__button-shop-now {
+  background-color: var(--saturated-blue-color);
+  color: var(--main-white-color);
+
+  &:hover {
+    background-color: var(--light-blue-color);
+    color: var(--saturated-blue-color);
   }
-  
+}
+
+.header__button-learn-more {
+  background-color: transparent;
+  border: 1px solid var(--warm-yellow-color);
+  color: var(--warm-yellow-color);
+
+  &:hover {
+    background-color: var(--warm-yellow-color);
+    color: var(--main-white-color);
+  }
+}
+
+@media (max-width: 800px) {
+  .header__hero {
+    background-color: #f7fdfb;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
