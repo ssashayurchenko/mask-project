@@ -1,5 +1,5 @@
+/*General styles */
 .factory__lab-content {
-  margin: 50px 0 auto;
   padding: 50px;
   display: flex;
   height: 100vh;
@@ -118,6 +118,7 @@
   margin: 0 10px;
 }
 
+/* Adaptive design */
 @media (min-width: 1000px) {
   .factory__lab-left-content {
     height: 80vh;

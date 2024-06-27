@@ -1,3 +1,4 @@
+/* General styles */
 .header__hero {
   padding-right: 50%;
   padding-left: 3%;
@@ -66,6 +67,7 @@ p.header__top-text {
   color: var(--main-white-color);
 }
 
+/* Adaptive design */
 @media (max-width: 800px) {
   .header__hero {
     background-color: #f7fdfb;

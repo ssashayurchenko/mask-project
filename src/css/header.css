@@ -1,3 +1,4 @@
+/* General styles */
 header {
   width: 100%;
   background-image: url(../img/header/hero-background.png);
@@ -48,15 +49,17 @@ header {
   color: var(--saturated-blue-color);
 }
 
+/* Adaptive design */
 @media (max-width: 800px) {
-  body, html {
-    overflow-x: hidden; 
+  body,
+  html {
+    overflow-x: hidden;
   }
   .header__hero-nav {
     padding: 20px;
     width: 100%;
     background-color: var(--light-azure-color);
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 
   #menu__toggle {
@@ -68,7 +71,7 @@ header {
   .menu__btn {
     display: flex;
     align-items: center;
-    position: relative; 
+    position: relative;
     top: 5px;
     right: 20px;
     width: 26px;
@@ -157,7 +160,7 @@ header {
     padding: 20px;
     position: absolute;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 
   #menu__toggle {
