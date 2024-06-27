@@ -15,9 +15,9 @@ header {
 
 .header__web-site-logo {
   width: 100px;
+  max-width: 100%;
   top: 50px;
-  margin-left: 13%;
-  padding: 0;
+  margin-left: 3%;
 }
 
 .header__nav-menu a {
@@ -49,28 +49,27 @@ header {
 }
 
 @media (max-width: 800px) {
+  body, html {
+    overflow-x: hidden; 
+  }
   .header__hero-nav {
     padding: 20px;
     width: 100%;
     background-color: var(--light-azure-color);
-  }
-
-  .header__web-site-logo {
-    margin-left: 5%;
+    box-sizing: border-box; 
   }
 
   #menu__toggle {
     opacity: 0;
     position: absolute;
-    top: 0;
     right: 20px;
   }
 
   .menu__btn {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 20px;
+    position: relative; 
+    top: 5px;
     right: 20px;
     width: 26px;
     height: 26px;
@@ -158,6 +157,7 @@ header {
     padding: 20px;
     position: absolute;
     width: 100%;
+    box-sizing: border-box; 
   }
 
   #menu__toggle {
