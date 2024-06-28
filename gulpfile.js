@@ -5,7 +5,6 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 
-// Шляхи до файлів
 const paths = {
   styles: {
     src: 'src/scss/**/*.scss',
@@ -13,7 +12,6 @@ const paths = {
   }
 };
 
-// Завдання для компіляції SCSS
 function styles() {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
@@ -28,7 +26,6 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-// Спостереження за змінами у файлах
 function watch() {
   gulp.watch(paths.styles.src, styles);
 }
